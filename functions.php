@@ -13,7 +13,7 @@ add_action( 'after_setup_theme', 'mon31w_setup' );
 
 
 function mon_31w_enqueue() {
-	wp_enqueue_style(  'mon-31w_enqueuestyle', 
+	wp_enqueue_style(  'mon-31w_enqueue-style', 
 						get_stylesheet_uri(), 
 						array(), 
 						_S_VERSION );
