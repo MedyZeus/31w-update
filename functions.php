@@ -10,3 +10,12 @@ function mon31w_setup() {
 	add_theme_support( 'custom-background' );
 }
 add_action( 'after_setup_theme', 'mon31w_setup' );
+
+
+function mon_31w_enqueue() {
+	wp_enqueue_style(  'mon-31w_enqueuestyle', 
+						get_stylesheet_uri(), 
+						array(), 
+						_S_VERSION );
+}
+add_action( 'wp_enqueue_scripts', 'mon_31w_enqueue' );

@@ -1,13 +1,9 @@
-/* Typography
---------------------------------------------- */
-@import "../abstract/variables/colors";
-@import "../abstract/variables/dimensions";
-@import "../abstract/variables/typography";
+
 
 /* Elements
 --------------------------------------------- */
 @import "elements/body";
-@import "elements/_h_et_p";
+@import "elements/h_et_p";
 @import "elements/hr";
 @import "elements/lists";
 @import "elements/media";
