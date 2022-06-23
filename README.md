@@ -2,7 +2,7 @@
 ## Premier thème et plugin WordPress
 ### Contient 5 commits
 
-[github-page](https://MedyZeus.github.io/31w-update/exer1)
+[github-page](https://MedyZeus.github.io/31w-update)
 > Le thème contient 5 fichiers
 1. index.php
 2. style.css
