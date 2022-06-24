@@ -1,0 +1,36 @@
+.site {
+	display: grid;
+	grid-template-columns: ($size__site-sidebar) auto;
+	grid-template-areas:
+		"header header"
+		"sidebar main"
+		"footer footer";
+}
+
+.site__footer, .site__header, .site__main, .site__sidebar {
+	padding: 1vh 1.5vw;
+}
+
+.site__header {
+	grid-area: header;
+	background-color: lighten($color__background-zonegrid, 20%);
+}
+
+.site__main {
+	grid-area: main;
+	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	background-color: lighten($color__background-zonegrid, 30%);
+}
+
+.site__sidebar {
+	grid-area: sidebar;
+	background-color: lighten($color__background-zonegrid, 40%);
+}
+
+.site__footer {
+	grid-area: footer;
+	background-color: lighten($color__background-zonegrid, 20%);
+}
+
+/* @import "no-sidebar";
+ */

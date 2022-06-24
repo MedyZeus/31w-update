@@ -380,15 +380,37 @@ body {
 *
 */
 h1, h2 {
-  font-family: #666666;
+  color: #666666;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3, h4, h5, h6, p {
-  font-family: #333333;
+  color: #333333;
+  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 h1 {
-  font-size: clamp(1.5rem, 5vw, 5rem);
+  font-size: clamp(1rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(0.9rem, 3vw, 1.6rem);
+}
+
+h3 {
+  font-size: clamp(0.8rem, 2.5vw, 1.3rem);
+}
+
+h4 {
+  font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+h5, h6 {
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+}
+
+p {
+  font-size: clamp(0.6rem, 1.5vw, 1.2rem);
 }
 
 hr {
@@ -545,4 +567,42 @@ select {
 
 textarea {
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+.site {
+  display: grid;
+  grid-template-columns: 20vw auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.site__footer, .site__header, .site__main, .site__sidebar {
+  padding: 1vh 1.5vw;
+}
+
+.site__header {
+  grid-area: header;
+  background-color: #dddfdd;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+  background-color: #f7f8f7;
+}
+
+.site__sidebar {
+  grid-area: sidebar;
+  background-color: white;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: #dddfdd;
+}
+
+/* @import "no-sidebar";
+ *//*# sourceMappingURL=style.css.map */

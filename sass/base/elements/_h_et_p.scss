@@ -4,13 +4,31 @@
 */
 
 h1,h2 {
-    font-family: lighten($color__h, 40%);
+    color: lighten($color__h, 40%);
+    font-family: $font__titre;
 }
 
 h3,h4,h5,h6,p {
-    font-family: lighten($color__h, 20%);
+    color: lighten($color__h, 20%);
+    font-family: $font__main;
 }
 
 h1 {
-    font-size: clamp(1.5rem, 5vw, 5rem);
+    font-size: clamp(1rem, 5vw, 3rem);
+}
+h2 {
+    font-size: clamp(.9rem, 3vw, 1.6rem);
+}
+h3 {
+    font-size: clamp(.8rem, 2.5vw, 1.3rem);
+}
+h4 {
+    font-size: clamp(.75rem, 2vw, 1rem);
+}
+h5, h6 {
+    font-size: clamp(.7rem, 1.5vw, .8rem);
+}
+
+p {
+    font-size: clamp(.6rem, 1.5vw, 1.2rem);
 }
