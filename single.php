@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+<section class="site__main">
+
     <h1>Mon premier modèle WordPress</h1>
     <?php
         if (have_posts()) :
@@ -9,11 +11,12 @@
                 $titre = get_the_title();
                 $sigle = substr($titre,0,8);
                 $heure = substr($titre,-6);
-
-                echo '<code>' . $sigle . '</code>';
-                echo '<code>' . $heure . '</code>';
             ?>
+
+                <code><?= $sigle; ?></code>
+                <code><?= $heure; ?></code>
     <?php endwhile; ?>
     <?php endif; ?>
+    <section>
 
 <?php get_footer(); ?>

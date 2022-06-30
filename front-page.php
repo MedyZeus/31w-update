@@ -5,11 +5,6 @@
         if (have_posts()) :
             while (have_posts()) : the_post();?>
             <h2><?php the_title(); ?></h2>
-            <p><?php //the_content(); ?></p>
-            <?php
-                /* $contenu = get_the_content();
-                echo wp_trim_words($contenu, 20, "..."); */
-            ?>
             <?php $lien = " ... <a class='bouton' href='"
                         . get_permalink() 
                         . "'>" 
@@ -21,5 +16,4 @@
     <?php endwhile; ?>
     <?php endif; ?>
 </section>
-
 <?php get_footer(); ?>
