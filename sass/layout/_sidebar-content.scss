@@ -13,7 +13,8 @@
 
 .site__header {
 	grid-area: header;
-	background-color: lighten($color__background-zonegrid, 20%);
+	background-image: $color__background-footer-header;
+	color: #fff;
 }
 
 .site__main {
@@ -24,12 +25,12 @@
 
 .site__sidebar {
 	grid-area: sidebar;
-	background-color: lighten($color__background-zonegrid, 40%);
+	background-image: $color__background-sidebar;
 }
 
 .site__footer {
 	grid-area: footer;
-	background-color: lighten($color__background-zonegrid, 20%);
+	background-image: $color__background-footer-header;
 }
 
 /* @import "no-sidebar";

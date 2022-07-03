@@ -584,7 +584,8 @@ textarea {
 
 .site__header {
   grid-area: header;
-  background-color: #dddfdd;
+  background-image: linear-gradient(to left, black 10%, #ccc 60%);
+  color: #fff;
 }
 
 .site__main {
@@ -596,12 +597,12 @@ textarea {
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: white;
+  background-image: linear-gradient(to bottom, #999 10%, black 60%);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #dddfdd;
+  background-image: linear-gradient(to left, black 10%, #ccc 60%);
 }
 
 /* @import "no-sidebar";
