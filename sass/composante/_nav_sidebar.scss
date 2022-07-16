@@ -1,0 +1,21 @@
+.sidebar__menu__ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar__menu__ul .menu-item {
+    margin: 1.5rem 0;
+}
+
+.sidebar__menu__ul .menu-item a {
+    padding: 1rem 5px;
+    line-height: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar__menu__ul .menu-item a:hover {
+    font-weight: bold;
+}

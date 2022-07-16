@@ -9,10 +9,8 @@
                         . get_permalink() 
                         . "'>" 
                         . substr(get_the_title(),0,8) 
-                        . "</a>" ?>
-                        
-            <p><?= wp_trim_words(get_the_content(), 20, $lien) ?></p>
-
+                        . "</a>" ?>            
+            <p><?= wp_trim_words(get_the_content(), 12, $lien) ?></p>
     <?php endwhile; ?>
     <?php endif; ?>
 </section>

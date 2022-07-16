@@ -25,4 +25,12 @@
             <h3>
                 Sidebar
             </h3>
+            <?php
+                wp_nav_menu(array(
+                    //'container' => 'nav',
+                    'menu_class' => 'sidebar__menu__ul',
+                    'container_class' => 'sidebar__menu',
+                    
+                ));
+            ?>
         </section>
